@@ -26,6 +26,8 @@ Execute the scraper.py script to initiate the scraping process, using the comman
 
 `python3 scraper.py`
 
+`python scraper.py --months january february march april may june july august september october`
+
 It will launch a Chrome browser, navigate to the Forex Factory calendar page for the current month, and collect data. The scraped data will be reformatted and saved as a CSV file in the "news" directory with the filename in the format "MONTH_news.csv," where "MONTH" is the current month's name.
 
 

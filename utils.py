@@ -14,16 +14,18 @@ def read_json(path):
     Args: path (str): The path to the JSON file.
     Returns: dict: The loaded JSON data.
     """
-    with open(path, 'r') as f:
+    with open(path, "r") as f:
         data = json.load(f)
     return data
 
 
 def extract_date_parts(text, year):
     # Full pattern: Day (e.g., Sun), Month (e.g., Jun), Day number (e.g., 1 or 01)
-    pattern = r'\b(?P<day>Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b\s+' \
-              r'(?P<month>Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b\s+' \
-              r'(?P<date>\d{1,2})\b'
+    pattern = (
+        r"\b(?P<day>Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b\s+"
+        r"(?P<month>Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b\s+"
+        r"(?P<date>\d{1,2})\b"
+    )
 
     match = re.search(pattern, text)
     if match:
@@ -36,31 +38,32 @@ def extract_date_parts(text, year):
         # Format date as dd/mm/yyyy
         formatted_date = f"{day:02d}/{month_number:02d}/{year}"
 
-        return {
-            "day": match.group("day"),
-            "date": formatted_date
-        }
+        return {"day": match.group("day"), "date": formatted_date}
     else:
         return None
 
 
 def reformat_data(data: list, year: str) -> list:
-    current_date = ''
-    current_time = ''
-    current_day = ''
+    current_date = ""
+    current_time = ""
+    current_day = ""
     structured_rows = []
+
+    # เรียก find_location_timezone ครั้งเดียวเท่านั้น
+    scraper_timezone = find_location_timezone()
+    print(f"[INFO] Detected timezone: {scraper_timezone}")
 
     for row in data:
         new_row = row.copy()
 
-        if "date" in new_row and new_row['date'] != "empty":
+        if "date" in new_row and new_row["date"] != "empty":
             date_parts = extract_date_parts(new_row["date"], year)
             if date_parts:
                 current_date = date_parts["date"]
                 current_day = date_parts["day"]
 
         if "time" in new_row:
-            if new_row["time"]!="empty":
+            if new_row["time"] != "empty":
                 current_time = new_row["time"].strip()
             else:
                 new_row["time"] = current_time
@@ -71,9 +74,10 @@ def reformat_data(data: list, year: str) -> list:
         new_row["day"] = current_day
         new_row["date"] = current_date
 
-        scraper_timezone = find_location_timezone()
         if scraper_timezone and config.TARGET_TIMEZONE:
-            new_row["time"] = convert_time_zone(current_date, current_time, scraper_timezone, config.TARGET_TIMEZONE)
+            new_row["time"] = convert_time_zone(
+                current_date, current_time, scraper_timezone, config.TARGET_TIMEZONE
+            )
         else:
             new_row["time"] = current_time
 
@@ -99,13 +103,14 @@ def reformat_data(data: list, year: str) -> list:
 
 def filter_row(row):
 
-    if row['currency'] not in config.ALLOWED_CURRENCY_CODES:
+    if row["currency"] not in config.ALLOWED_CURRENCY_CODES:
         return False
-    
-    if row['impact'].lower() not in config.ALLOWED_IMPACT_COLORS:
+
+    if row["impact"].lower() not in config.ALLOWED_IMPACT_COLORS:
         return False
-    
+
     return row
+
 
 def save_csv(data, month, year):
     structured_rows = reformat_data(data, year)
@@ -132,8 +137,7 @@ def convert_time_zone(date_str, time_str, from_zone_str, to_zone_str):
         from_zone = pytz.timezone(from_zone_str)
         to_zone = pytz.timezone(to_zone_str)
 
-        naive_dt = datetime.strptime(
-            f"{date_str} {time_str}", "%d/%m/%Y %I:%M%p")
+        naive_dt = datetime.strptime(f"{date_str} {time_str}", "%d/%m/%Y %I:%M%p")
         localized_dt = from_zone.localize(naive_dt)
         converted_dt = localized_dt.astimezone(to_zone)
 
@@ -144,7 +148,11 @@ def convert_time_zone(date_str, time_str, from_zone_str, to_zone_str):
 
 
 def find_location_timezone():
-    url = 'http://ipinfo.io/json'
-    response = urlopen(url)
-    data = json.load(response)
-    return data['timezone']
+    url = "http://ipinfo.io/json"
+    try:
+        response = urlopen(url)
+        data = json.load(response)
+        return data["timezone"]
+    except Exception as e:
+        print(f"[WARN] Failed to detect timezone: {e}")
+        return None

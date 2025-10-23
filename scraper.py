@@ -33,13 +33,26 @@ def init_driver(headless=True) -> webdriver.Chrome:
 
 def scroll_to_end(driver):
     previous_position = None
-    while True:
+    scroll_count = 0
+    no_change_count = 0
+    max_no_change = 3
+
+    while no_change_count < max_no_change:
         current_position = driver.execute_script("return window.pageYOffset;")
-        driver.execute_script("window.scrollTo(0, window.pageYOffset + 500);")
-        time.sleep(2)
+        driver.execute_script("window.scrollTo(0, window.pageYOffset + 1000);")
+        time.sleep(0.5)
+        scroll_count += 1
+
         if current_position == previous_position:
-            break
+            no_change_count += 1
+            print(f"[INFO] Position unchanged ({no_change_count}/{max_no_change})")
+        else:
+            no_change_count = 0
+            print(f"[INFO] Scrolled to position: {current_position}")
+
         previous_position = current_position
+
+    print(f"[INFO] Scrolling completed after {scroll_count} attempts")
 
 
 def parse_table(driver, month, year):
@@ -51,15 +64,13 @@ def parse_table(driver, month, year):
         event_id = row.get_attribute("data-event-id")
 
         for element in row.find_elements(By.TAG_NAME, "td"):
-            class_name = element.get_attribute('class')
+            class_name = element.get_attribute("class")
 
             if class_name in ALLOWED_ELEMENT_TYPES:
-                class_name_key = ALLOWED_ELEMENT_TYPES.get(
-                    f"{class_name}", "cell")
+                class_name_key = ALLOWED_ELEMENT_TYPES.get(f"{class_name}", "cell")
 
                 if "calendar__impact" in class_name:
-                    impact_elements = element.find_elements(
-                        By.TAG_NAME, "span")
+                    impact_elements = element.find_elements(By.TAG_NAME, "span")
                     color = None
                     for impact in impact_elements:
                         impact_class = impact.get_attribute("class")
@@ -78,8 +89,6 @@ def parse_table(driver, month, year):
         if row_data:
             data.append(row_data)
 
-    save_csv(data, month, year)
-
     return data, month
 
 
@@ -91,10 +100,8 @@ def get_target_month(arg_month=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Scrape Forex Factory calendar.")
-    parser.add_argument("--months", nargs="+",
-                        help='Target months: e.g., this next')
+    parser = argparse.ArgumentParser(description="Scrape Forex Factory calendar.")
+    parser.add_argument("--months", nargs="+", help="Target months: e.g., this next")
 
     args = parser.parse_args()
     month_params = args.months if args.months else ["this"]
@@ -105,12 +112,21 @@ def main():
         print(f"\n[INFO] Navigating to {url}")
 
         driver = init_driver()
+
+        print(f"[INFO] Waiting 2 seconds before accessing {url}")
+        time.sleep(2)
+
         driver.get(url)
-        detected_tz = driver.execute_script("return Intl.DateTimeFormat().resolvedOptions().timeZone")
+
+        print(f"[INFO] Waiting for page to load...")
+        time.sleep(3)
+
+        detected_tz = driver.execute_script(
+            "return Intl.DateTimeFormat().resolvedOptions().timeZone"
+        )
         print(f"[INFO] Browser timezone: {detected_tz}")
         config.SCRAPER_TIMEZONE = detected_tz
         scroll_to_end(driver)
-
         # Determine readable month name and year
         if param == "this":
             now = datetime.now()
@@ -127,12 +143,20 @@ def main():
 
         print(f"[INFO] Scraping data for {month} {year}")
         try:
-            parse_table(driver, month, str(year))
+            data, scraped_month = parse_table(driver, month, str(year))
+            print(f"[INFO] Scraped {len(data)} rows of raw data")
+            print(f"[INFO] Filtering and saving data for {month} {year}")
+            save_csv(data, month, str(year))
+            print(f"[INFO] Data saved successfully for {month} {year}")
+
         except Exception as e:
             print(f"[ERROR] Failed to scrape {param} ({month} {year}): {e}")
 
-        driver.quit()  #  Kill the driver cleanly after each scrape
-        time.sleep(3)
+        driver.quit()
+
+        if len(month_params) > 1:
+            print(f"[INFO] Waiting 5 seconds before next scrape...")
+            time.sleep(5)
 
 
 if __name__ == "__main__":

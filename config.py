@@ -22,14 +22,14 @@ ICON_COLOR_MAP = {
     "icon icon--ff-impact-yel": "yellow",
     "icon icon--ff-impact-ora": "orange",
     "icon icon--ff-impact-red": "red",
-    "icon icon--ff-impact-gra": "gray"
+    "icon icon--ff-impact-gra": "gray",
 }
 
 # Allowed currency codes for filtering news events
-ALLOWED_CURRENCY_CODES = ['CAD', 'EUR', 'GBP', 'USD']
+ALLOWED_CURRENCY_CODES = ["CAD", "EUR", "GBP", "USD"]
 
 # Allowed impact levels for filtering news events
-ALLOWED_IMPACT_COLORS = ['red', 'orange', 'gray']
+ALLOWED_IMPACT_COLORS = ["red", "orange", "gray"]
 
 # Set this to the target timezone you'd like your output to be in.
 # If left as None, no conversion will happen.
