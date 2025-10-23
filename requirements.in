@@ -1,0 +1,4 @@
+pandas>=2.0.0
+selenium>=4.15.0
+webdriver_manager>=4.0.0
+pytz>=2023.3

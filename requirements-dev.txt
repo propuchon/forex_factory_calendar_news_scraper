@@ -1,0 +1,11 @@
+autoflake
+docformatter
+isort
+black
+black[jupyter]
+ruff
+pytest
+pytest-env
+pytest-asyncio
+pytest-mock
+httpx
