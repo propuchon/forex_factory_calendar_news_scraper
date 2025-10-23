@@ -1,0 +1,109 @@
+date,time,currency,impact,event,detail,actual,forecast,previous,day
+01/03/2025,12:15am,USD,red,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145849,,,,Sat
+03/03/2025,5:00pm,EUR,orange,Core CPI Flash Estimate y/y,https://www.forexfactory.com/calendar?month=March#detail=145355,2.6%,2.5%,2.7%,Mon
+03/03/2025,5:00pm,EUR,orange,CPI Flash Estimate y/y,https://www.forexfactory.com/calendar?month=March#detail=145356,2.4%,2.3%,2.5%,Mon
+03/03/2025,9:45pm,USD,orange,Final Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=141647,52.7,51.6,51.6,Mon
+03/03/2025,10:00pm,USD,red,ISM Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=141136,50.3,50.6,50.9,Mon
+03/03/2025,10:00pm,USD,orange,ISM Manufacturing Prices,https://www.forexfactory.com/calendar?month=March#detail=141148,62.4,56.2,54.9,Mon
+04/03/2025,2:39am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145852,,,,Tue
+05/03/2025,9:10am,USD,red,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145853,,,,Wed
+05/03/2025,8:15pm,USD,red,ADP Non-Farm Employment Change,https://www.forexfactory.com/calendar?month=March#detail=142721,77K,141K,186K,Wed
+05/03/2025,9:30pm,GBP,orange,Monetary Policy Report Hearings,https://www.forexfactory.com/calendar?month=March#detail=145639,,,,Wed
+05/03/2025,9:45pm,USD,orange,Final Services PMI,https://www.forexfactory.com/calendar?month=March#detail=141659,51.0,49.7,49.7,Wed
+05/03/2025,10:00pm,USD,red,ISM Services PMI,https://www.forexfactory.com/calendar?month=March#detail=141160,53.5,52.5,52.8,Wed
+06/03/2025,4:30pm,GBP,orange,Construction PMI,https://www.forexfactory.com/calendar?month=March#detail=143408,44.6,49.5,48.1,Thu
+06/03/2025,All Day,EUR,red,Euro Summit,https://www.forexfactory.com/calendar?month=March#detail=145851,,,,Thu
+06/03/2025,8:15pm,EUR,red,Main Refinancing Rate,https://www.forexfactory.com/calendar?month=March#detail=142927,2.65%,2.65%,2.90%,Thu
+06/03/2025,8:15pm,EUR,red,Monetary Policy Statement,https://www.forexfactory.com/calendar?month=March#detail=142928,,,,Thu
+06/03/2025,8:30pm,USD,red,Unemployment Claims,https://www.forexfactory.com/calendar?month=March#detail=141439,221K,234K,242K,Thu
+06/03/2025,8:45pm,EUR,red,ECB Press Conference,https://www.forexfactory.com/calendar?month=March#detail=142926,,,,Thu
+06/03/2025,10:00pm,CAD,orange,Ivey PMI,https://www.forexfactory.com/calendar?month=March#detail=144934,55.3,50.6,47.1,Thu
+07/03/2025,2:39am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145861,,,,Fri
+07/03/2025,3:30am,USD,orange,FOMC Member Waller Speaks,https://www.forexfactory.com/calendar?month=March#detail=145842,,,,Fri
+07/03/2025,4:30pm,EUR,orange,ECB President Lagarde Speaks,https://www.forexfactory.com/calendar?month=March#detail=145854,,,,Fri
+07/03/2025,8:30pm,CAD,red,Employment Change,https://www.forexfactory.com/calendar?month=March#detail=144970,1.1K,19.7K,76.0K,Fri
+07/03/2025,8:30pm,CAD,red,Unemployment Rate,https://www.forexfactory.com/calendar?month=March#detail=144982,6.6%,6.7%,6.6%,Fri
+07/03/2025,8:30pm,USD,red,Average Hourly Earnings m/m,https://www.forexfactory.com/calendar?month=March#detail=142591,0.3%,0.3%,0.4%,Fri
+07/03/2025,8:30pm,USD,red,Non-Farm Employment Change,https://www.forexfactory.com/calendar?month=March#detail=142567,151K,159K,125K,Fri
+07/03/2025,8:30pm,USD,red,Unemployment Rate,https://www.forexfactory.com/calendar?month=March#detail=142579,4.1%,4.0%,4.0%,Fri
+07/03/2025,11:00pm,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145864,,,,Fri
+08/03/2025,12:30am,USD,red,Fed Chair Powell Speaks,https://www.forexfactory.com/calendar?month=March#detail=145840,,,,Sat
+08/03/2025,3:00am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145860,,,,Sat
+09/03/2025,2:00pm,CAD,gray,Daylight Saving Time Shift,https://www.forexfactory.com/calendar?month=March#detail=140497,,,,Sun
+09/03/2025,2:00pm,USD,gray,Daylight Saving Time Shift,https://www.forexfactory.com/calendar?month=March#detail=140495,,,,Sun
+11/03/2025,9:00pm,USD,red,JOLTS Job Openings,https://www.forexfactory.com/calendar?month=March#detail=143893,7.74M,7.65M,7.51M,Tue
+12/03/2025,4:00am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145871,,,,Wed
+12/03/2025,3:45pm,EUR,orange,ECB President Lagarde Speaks,https://www.forexfactory.com/calendar?month=March#detail=145862,,,,Wed
+12/03/2025,7:30pm,USD,red,Core CPI m/m,https://www.forexfactory.com/calendar?month=March#detail=142657,0.2%,0.3%,0.4%,Wed
+12/03/2025,7:30pm,USD,red,CPI m/m,https://www.forexfactory.com/calendar?month=March#detail=142633,0.2%,0.3%,0.5%,Wed
+12/03/2025,7:30pm,USD,red,CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=142645,2.8%,2.9%,3.0%,Wed
+12/03/2025,8:45pm,CAD,red,BOC Rate Statement,https://www.forexfactory.com/calendar?month=March#detail=141399,,,,Wed
+12/03/2025,8:45pm,CAD,red,Overnight Rate,https://www.forexfactory.com/calendar?month=March#detail=141387,2.75%,2.75%,3.00%,Wed
+12/03/2025,9:30pm,CAD,red,BOC Press Conference,https://www.forexfactory.com/calendar?month=March#detail=141410,,,,Wed
+13/03/2025,7:30pm,USD,red,Core PPI m/m,https://www.forexfactory.com/calendar?month=March#detail=142621,-0.1%,0.3%,0.5%,Thu
+13/03/2025,7:30pm,USD,red,PPI m/m,https://www.forexfactory.com/calendar?month=March#detail=142609,0.0%,0.3%,0.6%,Thu
+13/03/2025,7:30pm,USD,red,Unemployment Claims,https://www.forexfactory.com/calendar?month=March#detail=141440,220K,226K,222K,Thu
+14/03/2025,2:00pm,GBP,red,GDP m/m,https://www.forexfactory.com/calendar?month=March#detail=143701,-0.1%,0.1%,0.4%,Fri
+14/03/2025,9:00pm,USD,red,Prelim UoM Consumer Sentiment,https://www.forexfactory.com/calendar?month=March#detail=141260,57.9,63.1,64.7,Fri
+14/03/2025,9:00pm,USD,red,Prelim UoM Inflation Expectations,https://www.forexfactory.com/calendar?month=March#detail=141259,4.9%,,4.3%,Fri
+15/03/2025,2:00am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145877,,,,Sat
+17/03/2025,7:30pm,USD,red,Core Retail Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=142347,0.3%,0.3%,-0.6%,Mon
+17/03/2025,7:30pm,USD,red,Retail Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=142335,0.2%,0.6%,-1.2%,Mon
+17/03/2025,7:30pm,USD,orange,Empire State Manufacturing Index,https://www.forexfactory.com/calendar?month=March#detail=141173,-20.0,-1.9,5.7,Mon
+18/03/2025,5:00pm,EUR,orange,German ZEW Economic Sentiment,https://www.forexfactory.com/calendar?month=March#detail=142829,51.6,48.1,26.0,Tue
+18/03/2025,7:30pm,CAD,red,CPI m/m,https://www.forexfactory.com/calendar?month=March#detail=145122,1.1%,0.6%,0.1%,Tue
+18/03/2025,7:30pm,CAD,red,Median CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=145142,2.9%,2.7%,2.7%,Tue
+18/03/2025,7:30pm,CAD,red,Trimmed CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=145143,2.9%,2.8%,2.7%,Tue
+18/03/2025,7:30pm,CAD,orange,Common CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=145140,2.5%,2.2%,2.2%,Tue
+20/03/2025,1:00am,USD,red,Federal Funds Rate,https://www.forexfactory.com/calendar?month=March#detail=141208,4.50%,4.50%,4.50%,Thu
+20/03/2025,1:00am,USD,red,FOMC Economic Projections,https://www.forexfactory.com/calendar?month=March#detail=141231,,,,Thu
+20/03/2025,1:00am,USD,red,FOMC Statement,https://www.forexfactory.com/calendar?month=March#detail=141216,,,,Thu
+20/03/2025,1:30am,USD,red,FOMC Press Conference,https://www.forexfactory.com/calendar?month=March#detail=141224,,,,Thu
+20/03/2025,2:00pm,GBP,red,Claimant Count Change,https://www.forexfactory.com/calendar?month=March#detail=143788,44.2K,7.9K,2.8K,Thu
+20/03/2025,2:00pm,GBP,orange,Average Earnings Index 3m/y,https://www.forexfactory.com/calendar?month=March#detail=143786,5.8%,5.8%,6.1%,Thu
+20/03/2025,3:00pm,EUR,orange,ECB President Lagarde Speaks,https://www.forexfactory.com/calendar?month=March#detail=145878,,,,Thu
+20/03/2025,7:00pm,GBP,red,Monetary Policy Summary,https://www.forexfactory.com/calendar?month=March#detail=143347,,,,Thu
+20/03/2025,7:00pm,GBP,red,MPC Official Bank Rate Votes,https://www.forexfactory.com/calendar?month=March#detail=143348,0-1-8,0-2-7,0-9-0,Thu
+20/03/2025,7:00pm,GBP,red,Official Bank Rate,https://www.forexfactory.com/calendar?month=March#detail=143346,4.50%,4.50%,4.50%,Thu
+20/03/2025,7:30pm,USD,red,Unemployment Claims,https://www.forexfactory.com/calendar?month=March#detail=141441,223K,224K,221K,Thu
+20/03/2025,7:30pm,USD,orange,Philly Fed Manufacturing Index,https://www.forexfactory.com/calendar?month=March#detail=141197,12.5,8.8,18.1,Thu
+20/03/2025,9:00pm,USD,orange,Existing Home Sales,https://www.forexfactory.com/calendar?month=March#detail=143010,4.26M,3.95M,4.09M,Thu
+20/03/2025,9:40pm,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145885,,,,Thu
+20/03/2025,11:50pm,CAD,red,BOC Gov Macklem Speaks,https://www.forexfactory.com/calendar?month=March#detail=145875,,,,Thu
+21/03/2025,7:30pm,CAD,red,Core Retail Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=145046,0.2%,-0.1%,2.9%,Fri
+21/03/2025,7:30pm,CAD,red,Retail Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=145034,-0.6%,-0.4%,2.6%,Fri
+24/03/2025,3:15pm,EUR,red,French Flash Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=141051,48.9,46.2,45.8,Mon
+24/03/2025,3:15pm,EUR,red,French Flash Services PMI,https://www.forexfactory.com/calendar?month=March#detail=141050,46.6,46.3,45.3,Mon
+24/03/2025,3:30pm,EUR,red,German Flash Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=142171,48.3,47.1,46.5,Mon
+24/03/2025,3:30pm,EUR,red,German Flash Services PMI,https://www.forexfactory.com/calendar?month=March#detail=142172,50.2,52.3,51.1,Mon
+24/03/2025,4:00pm,EUR,orange,Flash Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=142169,48.7,48.3,47.6,Mon
+24/03/2025,4:00pm,EUR,orange,Flash Services PMI,https://www.forexfactory.com/calendar?month=March#detail=142170,50.4,51.2,50.6,Mon
+24/03/2025,4:30pm,GBP,red,Flash Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=142173,44.6,47.3,46.9,Mon
+24/03/2025,4:30pm,GBP,red,Flash Services PMI,https://www.forexfactory.com/calendar?month=March#detail=142174,53.2,51.2,51.0,Mon
+24/03/2025,8:45pm,USD,red,Flash Manufacturing PMI,https://www.forexfactory.com/calendar?month=March#detail=143929,49.8,51.9,52.7,Mon
+24/03/2025,8:45pm,USD,red,Flash Services PMI,https://www.forexfactory.com/calendar?month=March#detail=143941,54.3,51.2,51.0,Mon
+25/03/2025,1:00am,GBP,red,BOE Gov Bailey Speaks,https://www.forexfactory.com/calendar?month=March#detail=145879,,,,Tue
+25/03/2025,1:30am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145898,,,,Tue
+25/03/2025,4:00pm,EUR,orange,German ifo Business Climate,https://www.forexfactory.com/calendar?month=March#detail=142264,86.7,86.8,85.3,Tue
+25/03/2025,8:00pm,USD,orange,S&P/CS Composite-20 HPI y/y,https://www.forexfactory.com/calendar?month=March#detail=141542,4.7%,4.6%,4.5%,Tue
+25/03/2025,8:59pm,USD,orange,Richmond Manufacturing Index,https://www.forexfactory.com/calendar?month=March#detail=141185,-4,8,6,Tue
+25/03/2025,9:00pm,USD,orange,CB Consumer Confidence,https://www.forexfactory.com/calendar?month=March#detail=141245,92.9,94.2,100.1,Tue
+25/03/2025,9:00pm,USD,orange,New Home Sales,https://www.forexfactory.com/calendar?month=March#detail=141124,676K,682K,664K,Tue
+26/03/2025,2:00pm,GBP,red,CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=143579,2.8%,3.0%,3.0%,Wed
+26/03/2025,7:30pm,GBP,red,Annual Budget Release,https://www.forexfactory.com/calendar?month=March#detail=143322,,,,Wed
+26/03/2025,7:30pm,USD,orange,Core Durable Goods Orders m/m,https://www.forexfactory.com/calendar?month=March#detail=142381,0.7%,0.2%,0.1%,Wed
+26/03/2025,7:30pm,USD,orange,Durable Goods Orders m/m,https://www.forexfactory.com/calendar?month=March#detail=142371,0.9%,-1.1%,3.2%,Wed
+27/03/2025,3:00am,USD,red,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145915,,,,Thu
+27/03/2025,8:00am,USD,orange,President Trump Speaks,https://www.forexfactory.com/calendar?month=March#detail=145914,,,,Thu
+27/03/2025,7:30pm,USD,red,Final GDP q/q,https://www.forexfactory.com/calendar?month=March#detail=142549,2.4%,2.3%,2.3%,Thu
+27/03/2025,7:30pm,USD,red,Unemployment Claims,https://www.forexfactory.com/calendar?month=March#detail=141442,224K,225K,225K,Thu
+27/03/2025,7:30pm,USD,orange,Final GDP Price Index q/q,https://www.forexfactory.com/calendar?month=March#detail=142553,2.3%,2.4%,2.4%,Thu
+27/03/2025,9:00pm,USD,orange,Pending Home Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=143022,2.0%,0.9%,-4.6%,Thu
+28/03/2025,2:00pm,GBP,red,Retail Sales m/m,https://www.forexfactory.com/calendar?month=March#detail=143666,1.0%,-0.3%,1.4%,Fri
+28/03/2025,3:00pm,EUR,orange,Spanish Flash CPI y/y,https://www.forexfactory.com/calendar?month=March#detail=140871,2.3%,2.6%,3.0%,Fri
+28/03/2025,7:30pm,CAD,red,GDP m/m,https://www.forexfactory.com/calendar?month=March#detail=144958,0.4%,0.3%,0.3%,Fri
+28/03/2025,7:30pm,USD,red,Core PCE Price Index m/m,https://www.forexfactory.com/calendar?month=March#detail=142507,0.4%,0.3%,0.3%,Fri
+28/03/2025,9:00pm,USD,orange,Revised UoM Consumer Sentiment,https://www.forexfactory.com/calendar?month=March#detail=141284,57.0,57.9,57.9,Fri
+30/03/2025,8:00am,EUR,gray,Daylight Saving Time Shift,https://www.forexfactory.com/calendar?month=March#detail=140555,,,,Sun
+30/03/2025,8:00am,GBP,gray,Daylight Saving Time Shift,https://www.forexfactory.com/calendar?month=March#detail=140556,,,,Sun
+31/03/2025,All Day,EUR,red,German Prelim CPI m/m,https://www.forexfactory.com/calendar?month=March#detail=142886,0.3%,0.3%,0.4%,Mon
